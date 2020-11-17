@@ -1,0 +1,9 @@
+<mapper namespace="student">
+    <select id="selectList" resultType="com.joey.persistent.pojo.Student">
+        select * from student
+    </select>
+
+    <select id="selectOne" resultType="com.joey.persistent.pojo.Student" parameterType="com.joey.persistent.pojo.Student">
+        select * from student where id = #{id} and name = #{name}
+    </select>
+</mapper>

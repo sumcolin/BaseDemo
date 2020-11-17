@@ -17,6 +17,20 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.17</version>
         </dependency>
+
+        <!-- 解析Xml文件 -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+        <!-- 数据库连接池 -->
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
+        </dependency>
     </dependencies>
 
 </project>
