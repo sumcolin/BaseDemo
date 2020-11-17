@@ -1,0 +1,11 @@
+<configuration>
+
+    <datasource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.0.106:3306/joey" />
+        <property name="user" value="root" />
+        <property name="name" value="123456" />
+    </datasource>
+
+    <mapper resource="studentMapper.xml" />
+</configuration>

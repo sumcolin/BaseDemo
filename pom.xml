@@ -11,6 +11,7 @@
     <modules>
         <module>wechat</module>
         <module>common</module>
+        <module>persistent</module>
     </modules>
 
 

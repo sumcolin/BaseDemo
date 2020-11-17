@@ -1,7 +1,6 @@
 package com.joey.common.pojo;
 
 import com.alibaba.fastjson.JSONObject;
-import com.joey.common.http.HttpRequest;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
