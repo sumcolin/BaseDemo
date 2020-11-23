@@ -1,0 +1,11 @@
+wechat:
+  appid: testAppid
+  secret: testAppSecret
+  domain:
+    base: api.weixin.qq.com
+    # 备用域名
+    standby: api2.weixin.qq.com
+  token: joey
+  accountId: testAccountId
+  login:
+    token: joeyWeb
