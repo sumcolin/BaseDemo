@@ -5,7 +5,6 @@ import com.joey.persistent.custom.pojo.MappedStatement;
 
 import java.lang.reflect.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class DefaultSqlSession implements SqlSession {

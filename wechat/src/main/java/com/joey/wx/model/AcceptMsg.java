@@ -1,10 +1,9 @@
 package com.joey.wx.model;
 
-
 import lombok.Data;
 
 @Data
-public class BaseMsg {
+public class AcceptMsg {
 
     // 接受者
     private String toUserName;
@@ -21,5 +20,15 @@ public class BaseMsg {
     // 消息详情
     private String content;
 
+    // 事件通用参数
+    private String event;
 
+    private String msgID;
+
+    private String status;
+
+    // 自定义菜单事件参数
+    private String eventKey;
+
+    private String menuId;
 }

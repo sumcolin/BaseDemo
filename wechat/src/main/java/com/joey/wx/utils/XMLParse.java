@@ -14,10 +14,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.joey.wx.enums.EventType;
 import com.joey.wx.enums.MsgType;
-import com.joey.wx.model.BaseMsg;
-import com.joey.wx.model.EventMsg;
+import com.joey.wx.model.AcceptMsg;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
@@ -67,20 +65,11 @@ class XMLParse {
 
 
 	// 解析输入流 封装消息体
-	public static Object parse(InputStream inputStream) throws Exception {
-
-		BaseMsg baseMsg = new BaseMsg();
+	public static Object parseXML(InputStream inputStream) throws Exception {
 		// 1、解析字节流
 		Document document = new SAXReader().read(inputStream);
 		Element rootElement = document.getRootElement();
-		// 2、获取消息类型
-		String msgType = rootElement.element("MsgType").getTextTrim();
-		if (msgType.equals(MsgType.TEXT.getValue())) {
-			return parsDomToObj(rootElement, baseMsg);
-		}
-		// 3、处理消息内容
-		EventMsg eventMsg = new EventMsg();
-		return parsDomToObj(rootElement, eventMsg);
+		return parsDomToObj(rootElement, new AcceptMsg());
 	}
 
 
